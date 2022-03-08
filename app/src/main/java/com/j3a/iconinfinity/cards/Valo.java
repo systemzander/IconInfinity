@@ -8,7 +8,8 @@ public class Valo {
 
     Random random = new Random();
 
-    public String s;
+    public Boolean player = false;
+    public Boolean ai = false;
 
     public int attack = 0, armor = 0, playerhp = 0, aihp = 0, energy = 0;
 
@@ -40,9 +41,9 @@ public class Valo {
                 attack = 25;
                 armor = 10;
                 energy = 0;
-                if (s == "player")
+                if (player == true)
                     playerhp = 100;
-                if (s == "ai")
+                if (ai == true)
                     aihp = 100;
                 break;
             case 4:

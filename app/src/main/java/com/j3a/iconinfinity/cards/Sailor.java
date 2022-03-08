@@ -1,10 +1,12 @@
 package com.j3a.iconinfinity.cards;
 
 import com.j3a.iconinfinity.R;
+import com.j3a.iconinfinity.SelectScreen;
 
 public class Sailor {
 
-    public String s;
+    public Boolean player = false;
+    public Boolean ai = false;
 
     public int[] drawcards = {
             R.drawable.sailor0,
@@ -31,9 +33,9 @@ public class Sailor {
                 attack = 20;
                 armor = 10;
                 energy = 0;
-                if (s == "player")
+                if (player == true)
                     playerhp = 200;
-                if (s == "ai")
+                if (ai == true)
                     aihp = 200;
                 break;
             case 3:

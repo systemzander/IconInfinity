@@ -153,9 +153,17 @@ public class GameActivity extends AppCompatActivity {
                 break;
             case 2:
                 cardsDeck = valo.drawcards;
+                if (deck == playerDeck)
+                    valo.player = true;
+                if (deck == enemyDeck)
+                    valo.ai = true;
                 break;
             case 3:
                 cardsDeck = sailor.drawcards;
+                if (deck == playerDeck)
+                    sailor.player = true;
+                if (deck == enemyDeck)
+                    sailor.ai = true;
                 break;
             case 4:
                 cardsDeck = kenshin.drawcards;
@@ -778,10 +786,8 @@ public class GameActivity extends AppCompatActivity {
             aiHP -= curAttack;
         }
         curAttack = 0;
-        if (enemyDeck == 3)
-            aiHP += sailor.aihp;
-        if (enemyDeck == 2)
-            aiHP += valo.aihp;
+        aiHP += sailor.aihp;
+        aiHP += valo.aihp;
         enemyHP.setText("HP: "+aiHP);
         enemyEnergy.setText("Energy: ??");
         enemyArmor.setText("Armor: "+aiArmor);
@@ -797,10 +803,8 @@ public class GameActivity extends AppCompatActivity {
             hpcheck();
         }
         aiAttack = 0;
-        if (playerDeck == 3)
-            curHP += sailor.playerhp;
-        if (playerDeck == 2)
-            curHP += valo.playerhp;
+        curHP += sailor.playerhp;
+        curHP += valo.playerhp;
         playerHP.setText("HP: "+curHP);
         playerEnergy.setText("Energy: "+curEnergy);
         playerArmor.setText("Armor: "+curArmor);
@@ -841,13 +845,6 @@ public class GameActivity extends AppCompatActivity {
         anicards.aitimes2 = false;
         killua.playertimes2 = false;
         killua.playertimes2 = false;
-        anicards.s = " ";
-        dogge.s = " ";
-        kenshin.s = " ";
-        killua.s = " ";
-        meme.s = " ";
-        sailor.s = " ";
-        valo.s = " ";
     }
 
     void readyAttack(){
