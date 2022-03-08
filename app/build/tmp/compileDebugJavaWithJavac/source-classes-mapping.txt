@@ -24,16 +24,14 @@ com/j3a/iconinfinity/cards/Killua.java
  com.j3a.iconinfinity.cards.Killua
 com/j3a/iconinfinity/cards/AniCards.java
  com.j3a.iconinfinity.cards.AniCards
-com/j3a/iconinfinity/cards/Sailor.java
- com.j3a.iconinfinity.cards.Sailor
+com/j3a/iconinfinity/cards/Meme.java
+ com.j3a.iconinfinity.cards.Meme
 com/j3a/iconinfinity/MainActivity.java
  com.j3a.iconinfinity.MainActivity
  com.j3a.iconinfinity.MainActivity$1
  com.j3a.iconinfinity.MainActivity$2
-com/j3a/iconinfinity/cards/Meme.java
- com.j3a.iconinfinity.cards.Meme
-com/j3a/iconinfinity/cards/Valo.java
- com.j3a.iconinfinity.cards.Valo
+com/j3a/iconinfinity/cards/Sailor.java
+ com.j3a.iconinfinity.cards.Sailor
 com/j3a/iconinfinity/SelectScreen.java
  com.j3a.iconinfinity.SelectScreen
  com.j3a.iconinfinity.SelectScreen$1
@@ -45,6 +43,8 @@ com/j3a/iconinfinity/SelectScreen.java
  com.j3a.iconinfinity.SelectScreen$7
  com.j3a.iconinfinity.SelectScreen$8
  com.j3a.iconinfinity.SelectScreen$9
+com/j3a/iconinfinity/cards/Valo.java
+ com.j3a.iconinfinity.cards.Valo
 com/j3a/iconinfinity/GameActivity.java
  com.j3a.iconinfinity.GameActivity
  com.j3a.iconinfinity.GameActivity$1
